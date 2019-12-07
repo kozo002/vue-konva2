@@ -4,7 +4,8 @@
   "description": "yet another implementation for vue-konva",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "rollup src/main.js --file lib/vue-konva2.js --format umd --watch --name \"VueKonva2\""
   },
   "keywords": [
     "canvas",
@@ -12,5 +13,12 @@
     "vue.js"
   ],
   "author": "Kozo Yamagata",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "konva": "^4.0.18",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "rollup": "^1.27.8"
+  }
 }
